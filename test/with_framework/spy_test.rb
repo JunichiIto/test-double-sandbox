@@ -3,7 +3,7 @@ require 'spy/integration'
 
 module WithFramework
   class SpyTest < Minitest::Test
-    # このメソッドはstubに置き換えられるため、実際には呼ばれない
+    # このメソッドはspyに置き換えられるため、実際には呼ばれない
     def 外部メソッド(input)
       raise "Don't call me!"
     end
