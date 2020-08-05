@@ -15,7 +15,8 @@ module WithFramework
     end
 
     def test_テストコード
-      stub(:外部メソッド, 100) do
+      間接入力値 = 100
+      stub(:外部メソッド, 間接入力値) do
         期待値 = 200
         assert_equal 期待値, テスト対象
       end
